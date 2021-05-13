@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab2</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="table">
+        <table border="1">
+          <tr>
+            <td>Показатель</td>
+            <td>ВО</td>
+            <td>НВ-30/130</td>
+            <td>40/150</td>
+            <td>ВУ (кровельное)</td>
+            <td>51/177</td>
+            <td>54/200-6</td>
+            <td>54/200-7,5</td>
+            <td>ВК</td>
+          </tr>
+          <tr>
+            <td>Момент сопро-тивления, W, см3/м</td>
+            <td><input type="number" value="36.6" id="z1" /></td>
+            <td><input type="number" value="38" id="z2" /></td>
+            <td><input type="number" value="56.3" id="z3" /></td>
+            <td><input type="number" value="104" id="z4" /></td>
+            <td><input type="number" value="79.8" id="z5" /></td>
+            <td><input type="number" value="80" id="z6" /></td>
+            <td><input type="number" value="100" id="z7" /></td>
+            <td><input type="number" value="404" id="z8" /></td>
+          </tr>
+        </table>
+      </div>
+      <div class="select">
+        <button class="button" onclick="CreateTable()">Заполнить</button>
+        <button class="button" onclick="KillTable()" style="margin-left: 10px">
+          Убить таблицу
+        </button>
+      </div>
+      <div class="panel">
+        <fieldset>
+          <legend>Показатели</legend>
+          <ul>
+            <li>max</li>
+            <li>max</li>
+            <li>max</li>
+            <li>max</li>
+          </ul>
+        </fieldset>
+      </div>
+    </div>
+    <div id="content" class="tableNew"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

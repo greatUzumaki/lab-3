@@ -1,0 +1,103 @@
+.main {
+  display: flex;
+}
+
+.select {
+  margin-left: 3rem;
+}
+
+.panel {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+}
+
+.field {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.mesto {
+  font-weight: bold;
+  background-color: cornflowerblue;
+}
+
+.buttons .check {
+  margin-left: 50px;
+}
+
+.table {
+  display: block;
+  text-align: center;
+  position: relative;
+  left: 10px;
+}
+
+.tableNew {
+  display: block;
+  text-align: center;
+  position: fixed;
+  margin-top: 10px;
+  margin-left: 10px;
+  top: 200px;
+}
+
+.tableNew input {
+  width: 50px;
+}
+
+.tableNew table {
+  border-spacing: 5px 5px;
+}
+
+.tableNew td,
+th {
+  padding: 4px 15px;
+  border: 1px solid #ccc;
+}
+
+.table table {
+  border-spacing: 5px 5px;
+}
+
+.table td,
+th {
+  padding: 4px 15px;
+  border: 1px solid #ccc;
+}
+
+.button {
+  cursor: pointer;
+  width: 120px;
+  height: 45px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.button:hover {
+  background-color: azure;
+}
+
+.inputs input {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.inputs li {
+  line-height: 35px;
+}
+
+.table input {
+  width: 50px;
+}
+
+ul {
+  margin: 0;
+  padding: 4px;
+}
+ul li {
+  display: inline;
+  margin-right: 5px;
+  padding: 3px;
+}
