@@ -53,7 +53,9 @@ const autoFill = (i, j, e) => {
 
 // Векторы
 function vectors() {
-  vectorK(Arr);
+  let k = vectorK(Arr);
+  let w = vectorW(k);
+  let aw = vectorAw(w);
 }
 
 // Вектор K
@@ -70,4 +72,30 @@ function vectorK(arr) {
   for (let i = 0; i < 8; i++) {
     document.getElementById(`k${i}`).innerHTML = s[i];
   }
+  return s;
 }
+
+// Вектор W
+function vectorW(arr) {
+  let w = [];
+  for (let i = 0; i < 8; i++) {
+    w.push(1 / arr[i]);
+  }
+
+  let max = getMaxOfArray(w);
+  w = w.map((x) => x / max);
+
+  for (let i = 0; i < 8; i++) {
+    document.getElementById(`w${i}`).innerHTML = w[i];
+  }
+
+  return w;
+}
+
+// Нахождение максимального элемента в массиве
+function getMaxOfArray(numArray) {
+  return Math.max.apply(null, numArray);
+}
+
+// Вектор Aw
+function vectorAw(arr) {}
