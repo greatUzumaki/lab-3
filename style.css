@@ -12,6 +12,10 @@
   left: 0;
 }
 
+.panel li {
+  margin-left: 40px;
+}
+
 .field {
   display: flex;
   align-items: flex-end;
@@ -38,12 +42,11 @@
   display: block;
   text-align: center;
   position: fixed;
-  margin-left: 55px;
   top: 155px;
 }
 
 .tableNew input {
-  width: 30px;
+  width: 45px;
 }
 
 .table table {
@@ -132,7 +135,7 @@ th {
   text-align: center;
   position: fixed;
   margin-top: 350px;
-  margin-left: 700px;
+  margin-left: 100px;
   top: 150px;
 }
 
@@ -174,4 +177,8 @@ th {
 
 .vectorTd td {
   width: 45px;
+}
+
+.vectors {
+  margin-left: 70px;
 }

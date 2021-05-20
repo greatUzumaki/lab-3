@@ -7,7 +7,7 @@
     <title>Lab3</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
-  <body>
+  <body onload="generateTable()">
     <div class="main">
       <div class="table">
         <table border="1">
@@ -35,120 +35,116 @@
           </tr>
         </table>
       </div>
-      <div class="select">
-        <button class="button" onclick="generateTable()">Заполнить</button>
-        <button class="button" onclick="KillTable()" style="margin-left: 10px">
-          Убить таблицу
-        </button>
-      </div>
       <div class="panel">
         <fieldset>
           <legend>Показатели</legend>
           <ul>
-            <li>max</li>
-            <li>max</li>
-            <li>max</li>
-            <li>max</li>
+            <li>Лmax =</li>
+            <li>b =</li>
+            <li>ИС =</li>
+            <li>СС =</li>
           </ul>
         </fieldset>
       </div>
     </div>
     <div id="content" class="tableNew tableStyle"></div>
-    <span class="X">X</span>
-    <div id="vectorWcontent" class="vectorW tableStyle">
-      <table class="forTr vectorTd">
-        <caption>
-          Вектор W
-        </caption>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-      </table>
-    </div>
-    <span class="equal">=</span>
-    <div id="vectorAwcontent" class="vectorAw tableStyle">
-      <table class="forTr vectorTd">
-        <caption>
-          Вектор Aw
-        </caption>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-      </table>
-    </div>
-    <span class="equalArrow">=></span>
-    <div id="vectorLcontent" class="vectorL tableStyle">
-      <table class="forTr vectorTd">
-        <caption>
-          Вектор Л
-        </caption>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-      </table>
+    <div class="vectors">
+      <span class="X">X</span>
+      <div id="vectorWcontent" class="vectorW tableStyle">
+        <table class="forTr vectorTd">
+          <caption>
+            Вектор W
+          </caption>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <span class="equal">=</span>
+      <div id="vectorAwcontent" class="vectorAw tableStyle">
+        <table class="forTr vectorTd">
+          <caption>
+            Вектор Aw
+          </caption>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <span class="equalArrow">=></span>
+      <div id="vectorLcontent" class="vectorL tableStyle">
+        <table class="forTr vectorTd">
+          <caption>
+            Вектор Л
+          </caption>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+        </table>
+      </div>
     </div>
     <div id="vectorKcontent" class="vectorK tableStyle">
       <table>
@@ -156,14 +152,14 @@
           Вектор k
         </caption>
         <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>af</td>
-          <td>awdawd</td>
-          <td>w</td>
-          <td>wf</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
         </tr>
       </table>
     </div>

@@ -38,5 +38,10 @@ const createTable = (arr) => {
 };
 
 const autoFill = (i, j, e) => {
-    
+  let res;
+  Arr[i][j] = e;
+  if (e == 0) res = 0;
+  else res = 1 / e;
+  Arr[j][i] = res;
+  createTable(Arr);
 };
