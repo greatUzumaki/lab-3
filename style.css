@@ -152,7 +152,7 @@ th {
   display: block;
   position: fixed;
   margin-top: 130px;
-  margin-left: 880px;
+  margin-left: 890px;
   top: 150px;
   font-size: 45px;
 }
@@ -161,7 +161,7 @@ th {
   display: block;
   position: fixed;
   margin-top: 130px;
-  margin-left: 1140px;
+  margin-left: 1120px;
   top: 150px;
   font-size: 45px;
 }
@@ -176,7 +176,7 @@ th {
 }
 
 .vectorTd td {
-  width: 45px;
+  width: 130px;
 }
 
 .vectors {

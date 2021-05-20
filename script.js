@@ -56,6 +56,8 @@ function vectors() {
   let k = vectorK(Arr);
   let w = vectorW(k);
   let aw = vectorAw(w);
+  let l = vectorL(aw, w);
+  indexes(l);
 }
 
 // Вектор K
@@ -98,4 +100,55 @@ function getMaxOfArray(numArray) {
 }
 
 // Вектор Aw
-function vectorAw(arr) {}
+function vectorAw(w) {
+  let Aw = [];
+  for (let i = 0; i < 8; i++) {
+    let sum = 0;
+    for (let j = 0; j < 8; j++) {
+      sum += Arr[i][j] * w[i];
+    }
+    Aw.push(sum);
+  }
+
+  for (let i = 0; i < 8; i++) {
+    document.getElementById(`aw${i}`).innerHTML = Aw[i];
+  }
+
+  return Aw;
+}
+
+// Вектор Л
+function vectorL(aw, w) {
+  let L = [];
+  for (let i = 0; i < 8; i++) {
+    L.push(aw[i] / w[i]);
+  }
+
+  for (let i = 0; i < 8; i++) {
+    document.getElementById(`L${i}`).innerHTML = L[i];
+  }
+
+  return L;
+}
+
+// Индексы и параметры
+function indexes(L) {
+  let lMax, IS, b, OS;
+
+  let sum = 0;
+  for (let i = 0; i < 8; i++) {
+    sum += L[i];
+  }
+  lMax = sum / 8;
+
+  b = (lMax - 8 / 8) * 100;
+
+  IS = (lMax - 8) / (8 - 1);
+
+  OS = IS / 1.41;
+
+  document.getElementById('Lmax').innerHTML = lMax;
+  document.getElementById('b').innerHTML = b;
+  document.getElementById('is').innerHTML = IS;
+  document.getElementById('os').innerHTML = OS;
+}
