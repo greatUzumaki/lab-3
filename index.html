@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lab2</title>
+    <title>Lab3</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
@@ -24,19 +24,19 @@
           </tr>
           <tr>
             <td>Момент сопро-тивления, W, см3/м</td>
-            <td><input type="number" value="36.6" id="z1" /></td>
-            <td><input type="number" value="38" id="z2" /></td>
-            <td><input type="number" value="56.3" id="z3" /></td>
-            <td><input type="number" value="104" id="z4" /></td>
-            <td><input type="number" value="79.8" id="z5" /></td>
-            <td><input type="number" value="80" id="z6" /></td>
-            <td><input type="number" value="100" id="z7" /></td>
-            <td><input type="number" value="404" id="z8" /></td>
+            <td>36.6</td>
+            <td>38</td>
+            <td>56.3</td>
+            <td>104</td>
+            <td>79.8</td>
+            <td>80</td>
+            <td>100</td>
+            <td>404</td>
           </tr>
         </table>
       </div>
       <div class="select">
-        <button class="button" onclick="CreateTable()">Заполнить</button>
+        <button class="button" onclick="generateTable()">Заполнить</button>
         <button class="button" onclick="KillTable()" style="margin-left: 10px">
           Убить таблицу
         </button>
@@ -53,7 +53,120 @@
         </fieldset>
       </div>
     </div>
-    <div id="content" class="tableNew"></div>
+    <div id="content" class="tableNew tableStyle"></div>
+    <span class="X">X</span>
+    <div id="vectorWcontent" class="vectorW tableStyle">
+      <table class="forTr vectorTd">
+        <caption>
+          Вектор W
+        </caption>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <span class="equal">=</span>
+    <div id="vectorAwcontent" class="vectorAw tableStyle">
+      <table class="forTr vectorTd">
+        <caption>
+          Вектор Aw
+        </caption>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <span class="equalArrow">=></span>
+    <div id="vectorLcontent" class="vectorL tableStyle">
+      <table class="forTr vectorTd">
+        <caption>
+          Вектор Л
+        </caption>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div id="vectorKcontent" class="vectorK tableStyle">
+      <table>
+        <caption>
+          Вектор k
+        </caption>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>af</td>
+          <td>awdawd</td>
+          <td>w</td>
+          <td>wf</td>
+        </tr>
+      </table>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,42 @@
+let Arr = [[]];
+
+const generateTable = () => {
+  for (let i = 0; i < 8; i++) {
+    Arr[i] = [];
+    for (let j = 0; j < 8; j++) {
+      if (i == j) Arr[i][j] = 1;
+      else Arr[i][j] = 0;
+    }
+  }
+
+  createTable(Arr);
+};
+
+const createTable = (arr) => {
+  let html = '<table border="1">';
+
+  html += '<tr><td></td>';
+  for (let i = 0; i < 8; i++) {
+    html += `<td class="tableElem">x${i + 1}</td>`;
+  }
+  html += '</tr>';
+
+  for (let i = 0; i < 8; i++) {
+    html += `<tr><td class="tableElem">x${i + 1}</td>`;
+    for (let j = 0; j < 8; j++) {
+      if (i == j)
+        html += `<td><input type="number" value="${arr[i][j]}" readonly/></td>`;
+      else
+        html += `<td><input type="number" onchange="autoFill(${i}, ${j}, this.value)" value="${arr[i][j]}"/></td>`;
+    }
+    html += '</tr>';
+  }
+
+  html += '</table>';
+
+  document.getElementById('content').innerHTML = html;
+};
+
+const autoFill = (i, j, e) => {
+    
+};
