@@ -182,3 +182,8 @@ th {
 .vectors {
   margin-left: 70px;
 }
+
+.vectorK td {
+  width: 30px;
+  height: 25px;
+}

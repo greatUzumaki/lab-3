@@ -1,5 +1,6 @@
 let Arr = [[]];
 
+// Заполнение массива нолями "заглушками"
 const generateTable = () => {
   for (let i = 0; i < 8; i++) {
     Arr[i] = [];
@@ -12,6 +13,7 @@ const generateTable = () => {
   createTable(Arr);
 };
 
+// Генерация таблицы
 const createTable = (arr) => {
   let html = '<table border="1">';
 
@@ -37,11 +39,35 @@ const createTable = (arr) => {
   document.getElementById('content').innerHTML = html;
 };
 
+// Симметричное автозаполнение
 const autoFill = (i, j, e) => {
   let res;
   Arr[i][j] = e;
   if (e == 0) res = 0;
   else res = 1 / e;
   Arr[j][i] = res;
+  Arr = Arr.map((subArr) => subArr.map((x) => Number(x)));
   createTable(Arr);
+  vectors();
 };
+
+// Векторы
+function vectors() {
+  vectorK(Arr);
+}
+
+// Вектор K
+function vectorK(arr) {
+  let s = [];
+  for (i = 0; i < 8; i++) {
+    let sum = 0;
+    for (let j = 0; j < 8; j++) {
+      sum += arr[j][i];
+    }
+    s.push(sum);
+  }
+
+  for (let i = 0; i < 8; i++) {
+    document.getElementById(`k${i}`).innerHTML = s[i];
+  }
+}
