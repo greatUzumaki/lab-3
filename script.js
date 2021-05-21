@@ -145,7 +145,7 @@ function indexes(L) {
 
   IS = (lMax - 8) / (8 - 1);
 
-  OS = IS / 1.41;
+  OS = (IS / 1.41) * 100;
 
   document.getElementById('Lmax').innerHTML = lMax;
   document.getElementById('b').innerHTML = b;
