@@ -72,7 +72,7 @@ function vectorK(arr) {
   }
 
   for (let i = 0; i < 8; i++) {
-    document.getElementById(`k${i}`).innerHTML = s[i];
+    document.getElementById(`k${i}`).innerHTML = s[i].toFixed(4);
   }
   return s;
 }
@@ -88,7 +88,7 @@ function vectorW(arr) {
   w = w.map((x) => x / max);
 
   for (let i = 0; i < 8; i++) {
-    document.getElementById(`w${i}`).innerHTML = w[i];
+    document.getElementById(`w${i}`).innerHTML = w[i].toFixed(4);
   }
 
   return w;
@@ -105,13 +105,13 @@ function vectorAw(w) {
   for (let i = 0; i < 8; i++) {
     let sum = 0;
     for (let j = 0; j < 8; j++) {
-      sum += Arr[i][j] * w[i];
+      sum += Arr[i][j] * w[j];
     }
     Aw.push(sum);
   }
 
   for (let i = 0; i < 8; i++) {
-    document.getElementById(`aw${i}`).innerHTML = Aw[i];
+    document.getElementById(`aw${i}`).innerHTML = Aw[i].toFixed(4);
   }
 
   return Aw;
@@ -125,7 +125,7 @@ function vectorL(aw, w) {
   }
 
   for (let i = 0; i < 8; i++) {
-    document.getElementById(`L${i}`).innerHTML = L[i];
+    document.getElementById(`L${i}`).innerHTML = L[i].toFixed(4);
   }
 
   return L;
@@ -141,14 +141,14 @@ function indexes(L) {
   }
   lMax = sum / 8;
 
-  b = (lMax - 8 / 8) * 100;
+  b = (lMax - 8) / 8 * 100;
 
   IS = (lMax - 8) / (8 - 1);
 
   OS = (IS / 1.41) * 100;
 
-  document.getElementById('Lmax').innerHTML = lMax;
-  document.getElementById('b').innerHTML = b;
-  document.getElementById('is').innerHTML = IS;
-  document.getElementById('os').innerHTML = OS;
+  document.getElementById('Lmax').innerHTML = lMax.toFixed(4);
+  document.getElementById('b').innerHTML = b.toFixed(4);
+  document.getElementById('is').innerHTML = IS.toFixed(4);
+  document.getElementById('os').innerHTML = OS.toFixed(4);
 }
